@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  nginx.symfony:
+    container_name: python.flask
+    image: pigsas/python
+    volumes:
+      - ../:/app
+    ports:
+      - 5000:5000
